@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Sneakers - Product Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">ShopStyle</h1>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Collections</a>
+                <a href="#">Contact</a>
+                <a href="#" class="cart-btn">Cart (0)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page container">
+        <div class="product-container">
+            <!-- Product Gallery Section -->
+            <section class="product-gallery">
+                <div class="main-image">
+                    <img src="images/p1.jpg" alt="Premium Sneakers - Front View" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnails">
+                        <img src="images/p1.jpg" alt="Thumbnail 1" class="thumbnail active" data-image="images/p1.jpg">
+                        <img src="images/p2.jpg" alt="Thumbnail 2" class="thumbnail" data-image="images/p2.jpg">
+                        <img src="images/p3.jpg" alt="Thumbnail 3" class="thumbnail" data-image="images/p3.jpg">
+                        <img src="images/p4.jpg" alt="Thumbnail 4" class="thumbnail" data-image="images/p4.jpg">
+                    </div>
+                    <button class="scroll-btn prev">&#10094;</button>
+                    <button class="scroll-btn next">&#10095;</button>
+                </div>
+            </section>
+
+            <!-- Product Info Section -->
+            <section class="product-info">
+                <h1 class="product-title">Premium Comfort Sneakers</h1>
+                <div class="product-price">$129.99</div>
+                <div class="product-rating">
+                    ★★★★★ <span class="review-count">(42 reviews)</span>
+                </div>
+
+                <div class="product-description">
+                    <p>Experience ultimate comfort with our premium sneakers. Designed for all-day wear with cushioned soles and breathable materials.</p>
+                </div>
+
+                <!-- Color Variants -->
+                <div class="variant-selector color-variants">
+                    <h3>Color: <span id="selectedColor">Black</span></h3>
+                  <div class="color-options">
+  <button class="color-option active" data-color="Black"></button>
+  <button class="color-option" data-color="White"></button>
+  <button class="color-option" data-color="Blue"></button>
+  <button class="color-option" data-color="Red"></button>
+</div>
+                    <button class="compare-colors-btn">Compare Colors</button>
+                </div>
+
+                <!-- Size Variants -->
+                <div class="variant-selector size-variants">
+                    <h3>Size: <span id="selectedSize">Select size</span> <button class="size-chart-btn">Size Chart</button></h3>
+                    <div class="size-options">
+                        <button class="size-option">US 7</button>
+                        <button class="size-option">US 8</button>
+                        <button class="size-option">US 9</button>
+                        <button class="size-option">US 10</button>
+                        <button class="size-option">US 11</button>
+                    </div>
+                </div>
+
+                <!-- Add to Cart -->
+                <div class="add-to-cart">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">SKU:</span>
+                        <span class="meta-value">SNK-2025-PRM</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Category:</span>
+                        <span class="meta-value">Sneakers</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tags:</span>
+                        <span class="meta-value">Comfort, Premium, Lifestyle</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Pair Well With Section -->
+        <section class="pair-well-with">
+            <h2>Pair Well With</h2>
+            <div class="pair-products-container">
+                <div class="pair-products">
+                    <div class="product-card">
+                        <img src="images/p5.jpg" alt="Comfort Socks">
+                        <h3>Comfort Socks</h3>
+                        <div class="price">$12.99</div>
+                        <button class="add-to-cart-btn small">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/p6.jpg" alt="Casual Cap">
+                        <h3>Casual Cap</h3>
+                        <div class="price">$24.99</div>
+                        <button class="add-to-cart-btn small">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/p7.jpg" alt="Athletic Shorts">
+                        <h3>Athletic Shorts</h3>
+                        <div class="price">$29.99</div>
+                        <button class="add-to-cart-btn small">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/p4.jpg" alt="Sports Bag">
+                        <h3>Sports Bag</h3>
+                        <div class="price">$39.99</div>
+                        <button class="add-to-cart-btn small">Add to Cart</button>
+                    </div>
+                </div>
+             
+                <button class="scroll-pair-btn prev">&#10094;</button>
+                <button class="scroll-pair-btn next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Product Bundle -->
+        <section class="product-bundle">
+            <h2>Complete Your Look</h2>
+            <div class="bundle-items">
+                <div class="bundle-item">
+                    <img src="images/p1.jpg" alt="Premium Sneakers">
+                    <div class="bundle-item-info">
+                        <h3>Premium Sneakers</h3>
+                        <div class="price">$129.99</div>
+                    </div>
+                </div>
+                <div class="bundle-plus">+</div>
+                <div class="bundle-item">
+                    <img src="images/p2.jpg" alt="Comfort Socks">
+                    <div class="bundle-item-info">
+                        <h3>Comfort Socks</h3>
+                        <div class="price">$12.99</div>
+                    </div>
+                </div>
+                <div class="bundle-plus">+</div>
+                <div class="bundle-item">
+                    <img src="images/p3.jpg" alt="Athletic Shorts">
+                    <div class="bundle-item-info">
+                        <h3>Athletic Shorts</h3>
+                        <div class="price">$29.99</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bundle-total">
+                <div class="total-price">Total: $172.97</div>
+                <div class="savings">You save $10.00</div>
+                <button class="add-bundle-btn">Add Bundle to Cart</button>
+            </div>
+        </section>
+
+        <!-- Product Tabs -->
+        <section class="product-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="information">Product Information</button>
+                <button class="tab-btn" data-tab="shipping">Shipping Details</button>
+            </div>
+            <div class="tab-content">
+                <div id="description" class="tab-pane active">
+                    <h3>Product Description</h3>
+                    <p>Our Premium Comfort Sneakers are designed for those who value both style and comfort. The sneakers feature:</p>
+                    <ul>
+                        <li>Breathable mesh upper for maximum airflow</li>
+                        <li>Cushioned insole with arch support</li>
+                        <li>Durable rubber outsole with superior traction</li>
+                        <li>Lightweight design for all-day comfort</li>
+                        <li>Available in multiple colors to match your style</li>
+                    </ul>
+                    <p>Whether you're running errands or going for a casual walk, these sneakers will keep your feet comfortable throughout the day.</p>
+                </div>
+                <div id="information" class="tab-pane">
+                    <h3>Product Information</h3>
+                    <table>
+                        <tr>
+                            <th>Material</th>
+                            <td>80% Cotton, 20% Polyester</td>
+                        </tr>
+                        <tr>
+                            <th>Closure</th>
+                            <td>Lace-Up</td>
+                        </tr>
+                        <tr>
+                            <th>Sole</th>
+                            <td>Rubber</td>
+                        </tr>
+                        <tr>
+                            <th>Origin</th>
+                            <td>Imported</td>
+                        </tr>
+                        <tr>
+                            <th>Care Instructions</th>
+                            <td>Machine wash cold, air dry</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="shipping" class="tab-pane">
+                    <h3>Shipping Details</h3>
+                    <p>We offer fast and reliable shipping options:</p>
+                    <ul>
+                        <li><strong>Standard Shipping:</strong> 3-5 business days - $5.99 (Free for orders over $50)</li>
+                        <li><strong>Express Shipping:</strong> 2 business days - $12.99</li>
+                        <li><strong>Overnight Shipping:</strong> 1 business day - $24.99</li>
+                    </ul>
+                    <p>All orders are processed within 1-2 business days. You will receive a tracking number once your order ships.</p>
+                    <p>International shipping available with additional fees and longer delivery times.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="related-products">
+            <h2>You May Also Like</h2>
+            <div class="related-grid">
+                <div class="related-product">
+                    <img src="images/p8.jpg" alt="Running Shoes" loading="lazy">
+                    <h3>Running Shoes</h3>
+                    <div class="price">$89.99</div>
+                    <span class="badge new">New</span>
+                </div>
+                <div class="related-product">
+                    <img src="images/p9.jpg" alt="Casual Loafers" loading="lazy">
+                    <h3>Casual Loafers</h3>
+                    <div class="price">$79.99</div>
+                </div>
+                <div class="related-product">
+                    <img src="images/p10.jpg" alt="Athletic Sandals" loading="lazy">
+                    <h3>Athletic Sandals</h3>
+                    <div class="price">$49.99</div>
+                    <span class="badge popular">Popular</span>
+                </div>
+                <div class="related-product">
+                    <img src="images/p11.jpg" alt="Hiking Boots" loading="lazy">
+                    <h3>Hiking Boots</h3>
+                    <div class="price">$119.99</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Size Chart Modal -->
+    <div class="modal" id="sizeChartModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Size Chart</h2>
+            <img src="assets/size-chart.jpg" alt="Size Chart" class="size-chart-img">
+            <table class="size-table">
+                <thead>
+                    <tr>
+                        <th>US Size</th>
+                        <th>EU Size</th>
+                        <th>UK Size</th>
+                        <th>Insole Length (cm)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>40</td>
+                        <td>6</td>
+                        <td>25.5</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>41</td>
+                        <td>7</td>
+                        <td>26.5</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>42</td>
+                        <td>8</td>
+                        <td>27.5</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>43</td>
+                        <td>9</td>
+                        <td>28.5</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>44</td>
+                        <td>10</td>
+                        <td>29.5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="size-note">Note: Measurements may vary slightly depending on shoe style and personal preference.</p>
+        </div>
+    </div>
+
+    <!-- Compare Colors Modal -->
+    <div class="modal" id="compareColorsModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Compare Colors</h2>
+            <div class="compare-colors-container">
+                <div class="compare-color-option">
+                    <div class="compare-swatch black"></div>
+                    <p>Black</p>
+                    <button class="select-compare-btn" data-color="Black">Select</button>
+                </div>
+                <div class="compare-color-option">
+                    <div class="compare-swatch white"></div>
+                    <p>White</p>
+                    <button class="select-compare-btn" data-color="White">Select</button>
+                </div>
+                <div class="compare-color-option">
+                    <div class="compare-swatch blue"></div>
+                    <p>Blue</p>
+                    <button class="select-compare-btn" data-color="Blue">Select</button>
+                </div>
+                <div class="compare-color-option">
+                    <div class="compare-swatch red"></div>
+                    <p>Red</p>
+                    <button class="select-compare-btn" data-color="Red">Select</button>
+                </div>
+            </div>
+            <div class="selected-colors-container">
+                <h3>Selected for Comparison:</h3>
+                <div class="selected-colors">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>ShopStyle</h3>
+                <p>Premium footwear for the modern lifestyle.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ShopStyle. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
